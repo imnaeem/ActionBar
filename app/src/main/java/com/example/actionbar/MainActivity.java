@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-         toolbar = findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
 
@@ -34,11 +34,14 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_settings:
                 Intent intent = new Intent(MainActivity.this, Settings.class);
                 startActivity(intent);
+                return true;
             case R.id.action_favorite:
-                Toast.makeText(getApplicationContext(),"Fav", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Fav", Toast.LENGTH_LONG).show();
+                return true;
             case R.id.action_tasks:
                 TextView textView = findViewById(R.id.textView);
                 textView.setText("Action task was clicked");
+                return true;
             default:
 // If we got here, the user's action was not recognized.
 // Invoke the superclass to handle it.
