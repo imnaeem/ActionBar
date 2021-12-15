@@ -8,10 +8,10 @@
         app:showAsAction="ifRoom" />
 
     <item android:id="@+id/action_settings"
-        android:title="@string/action_settings"
+        android:title="@string/action_recyclerview"
         app:showAsAction="never"/>
 
     <item android:id="@+id/action_tasks"
-        android:title="@string/action_tasks"
+        android:title="@string/action_repo"
         app:showAsAction="ifRoom"/>
 </menu>
